@@ -1,5 +1,7 @@
+@import "./defaultStyles.module.scss";
 .App {
   text-align: center;
+  color: $main-black;
 }
 
 .App-logo {

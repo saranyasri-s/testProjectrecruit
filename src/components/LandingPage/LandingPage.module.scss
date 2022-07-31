@@ -1,0 +1,319 @@
+@import "../../defaultStyles.module.scss";
+
+// header styling
+.LandingPageHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: none;
+  align-items: center;
+}
+.headerLeftBrandName {
+  display: flex;
+  align-items: center;
+}
+.companyBrandLogo {
+  background-image: url("../../assets/r.png");
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+}
+.LandingPageHeader h3 {
+  font-weight: 700;
+}
+.headerRightButtons {
+  margin-right: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.headerRightButtons button {
+  margin-right: 0.2rem;
+}
+.findJobsButton {
+  padding: 0.3rem;
+  background: rgb(208, 43, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 43, 141, 1) 0%,
+    rgba(245, 175, 25, 1) 100%
+  );
+  border: 1px solid rgb(208, 43, 141);
+
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 9px;
+  cursor: pointer;
+}
+.findJobsButton:hover {
+  padding: 0.3rem;
+  background: rgba(233, 68, 167, 0.947);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 68, 167, 0.947) 0%,
+    rgba(245, 175, 25, 1) 100%
+  );
+  border: 1px solid rgb(208, 43, 141);
+
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 9px;
+  cursor: pointer;
+}
+.hireTalentButton {
+  padding: 0.3rem;
+  background: white;
+  border: 1px solid rgb(208, 43, 141);
+  border-radius: 30px;
+  color: rgb(208, 43, 141);
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 9px;
+}
+.hireTalentButton:hover {
+  padding: 0.3rem;
+  background: rgba(245, 240, 240, 0.778);
+  border: 1px solid rgb(208, 43, 141);
+  border-radius: 30px;
+  color: rgb(208, 43, 141);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+// mainpage styling
+.landinPageIntroCard {
+  padding: 4rem 2rem;
+  background: rgb(208, 43, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 43, 141, 1) 0%,
+    rgba(245, 175, 25, 1) 100%
+  );
+
+  display: flex;
+  flex-flow: column;
+  h3 {
+    color: white;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  p {
+    color: white;
+    padding: 1rem;
+    line-height: 150%;
+  }
+}
+.mainIntroButtons {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.mainIntroButtons button {
+  margin: 1rem 1rem;
+}
+.mainIntroButtons .findJobsButton {
+  border: 1px solid white;
+}
+.mainIntroButtons .hireTalentButton {
+  padding: 0.1rem 0.5rem;
+}
+// paths
+.paths {
+  margin: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.usualPath {
+  display: flex;
+  flex-flow: column;
+  h3 {
+    margin: 2rem;
+  }
+  .img {
+    width: 350px;
+    height: 350px;
+    background-image: url(../../assets/usual_path-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.rightPath {
+  display: flex;
+  flex-flow: column;
+  h3 {
+    margin: 2rem;
+    margin-bottom: 0;
+    color: rgb(208, 43, 141);
+  }
+  .img {
+    width: 350px;
+    height: 350px;
+    background-image: url(../../assets/rightpath-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 450px) {
+  .companyBrandLogo {
+    background-image: url("../../assets/r.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+  }
+  .LandingPageHeader h3 {
+    font-weight: 700;
+  }
+  .headerRightButtons {
+    margin-right: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .headerRightButtons button {
+    margin-right: 0.5rem;
+  }
+  .findJobsButton {
+    padding: 0.7rem;
+    background: rgb(208, 43, 141);
+    background: linear-gradient(
+      90deg,
+      rgba(208, 43, 141, 1) 0%,
+      rgba(245, 175, 25, 1) 100%
+    );
+    border: 1px solid rgb(208, 43, 141);
+
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+
+    cursor: pointer;
+  }
+  .findJobsButton:hover {
+    padding: 0.7rem;
+    background: rgba(233, 68, 167, 0.947);
+    background: linear-gradient(
+      90deg,
+      rgba(233, 68, 167, 0.947) 0%,
+      rgba(245, 175, 25, 1) 100%
+    );
+    border: 1px solid rgb(208, 43, 141);
+
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+
+    cursor: pointer;
+  }
+  .hireTalentButton {
+    padding: 0.7rem;
+    background: white;
+    border: 1px solid rgb(208, 43, 141);
+    border-radius: 30px;
+    color: rgb(208, 43, 141);
+    font-weight: 700;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .hireTalentButton:hover {
+    padding: 0.7rem;
+    background: rgba(245, 240, 240, 0.778);
+    border: 1px solid rgb(208, 43, 141);
+    border-radius: 30px;
+    color: rgb(208, 43, 141);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .landinPageIntroCard {
+    .mainIntroButtons {
+      margin-right: 2rem;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    .mainIntroButtons button {
+      margin: 2rem 2rem;
+    }
+    .mainIntroButtons .findJobsButton {
+      border: 1px solid white;
+    }
+    .mainIntroButtons .hireTalentButton {
+      padding: 0.3rem 1rem;
+    }
+  }
+}
+// search card
+.searchCard {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.labelInput {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  label {
+    text-align: start;
+  }
+  input {
+    padding: 0.4rem;
+    border: 1px solid #8080804d;
+    border-radius: 4px;
+    margin: 0.5rem 0 1rem 0;
+    outline: none;
+    margin-right: 1rem;
+  }
+}
+.searchButton {
+  padding: 0.3rem;
+  background: rgb(208, 43, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 43, 141, 1) 0%,
+    rgba(245, 175, 25, 1) 100%
+  );
+  border: 1px solid rgb(208, 43, 141);
+
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 9px;
+  cursor: pointer;
+}
+@media (min-width: 300px) {
+  .searchButton {
+    padding: 0.7rem 1.3rem;
+    background: rgb(208, 43, 141);
+    background: linear-gradient(
+      90deg,
+      rgba(208, 43, 141, 1) 0%,
+      rgba(245, 175, 25, 1) 100%
+    );
+    border: 1px solid rgb(208, 43, 141);
+
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  .searchButton:hover {
+    background: rgba(233, 68, 167, 0.947);
+    background: linear-gradient(
+      90deg,
+      rgba(233, 68, 167, 0.947) 0%,
+      rgba(245, 175, 25, 1) 100%
+    );
+    border: 1px solid rgb(208, 43, 141);
+  }
+}
